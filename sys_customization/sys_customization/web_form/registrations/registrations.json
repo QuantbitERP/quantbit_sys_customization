@@ -18,7 +18,7 @@
  "list_columns": [],
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2025-10-27 17:04:18.830882",
+ "modified": "2025-10-27 17:36:20.376479",
  "modified_by": "Administrator",
  "module": "Sys Customization",
  "name": "registrations",
@@ -32,6 +32,7 @@
  "web_form_fields": [
   {
    "allow_read_on_all_link_options": 0,
+   "fieldname": "group_name",
    "fieldtype": "Data",
    "hidden": 0,
    "label": "Group Name",
@@ -39,11 +40,12 @@
    "max_value": 0,
    "precision": "",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
+   "fieldname": "group_leader_name",
    "fieldtype": "Data",
    "hidden": 0,
    "label": "Group Leader Name",
@@ -51,11 +53,12 @@
    "max_value": 0,
    "precision": "",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
+   "fieldname": "group_leader_email_address",
    "fieldtype": "Data",
    "hidden": 0,
    "label": "Group Leader Email Address",
@@ -63,23 +66,25 @@
    "max_value": 0,
    "precision": "",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldtype": "Data",
+   "fieldname": "group_leader_phone_number",
+   "fieldtype": "Int",
    "hidden": 0,
    "label": "Group Leader Phone Number",
    "max_length": 0,
    "max_value": 0,
    "precision": "",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
+   "fieldname": "group_leader_college_name",
    "fieldtype": "Data",
    "hidden": 0,
    "label": "Group Leader College Name",
@@ -87,20 +92,21 @@
    "max_value": 0,
    "precision": "",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
+   "fieldname": "table_rono",
    "fieldtype": "Table",
    "hidden": 0,
-   "label": "Team Members Details",
+   "label": "Registration Details",
    "max_length": 0,
    "max_value": 0,
    "options": "Registrations Details",
    "precision": "",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
    "show_in_filter": 0
   }
  ]

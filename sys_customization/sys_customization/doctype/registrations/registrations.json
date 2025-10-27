@@ -8,6 +8,13 @@
  "field_order": [
   "series",
   "naming_series",
+  "section_break_ktvi",
+  "group_name",
+  "group_leader_name",
+  "column_break_mxfh",
+  "group_leader_email_address",
+  "group_leader_phone_number",
+  "group_leader_college_name",
   "section_break_fqzv",
   "table_rono"
  ],
@@ -35,12 +42,46 @@
    "fieldtype": "Table",
    "label": "Registration Details",
    "options": "Registrations Details"
+  },
+  {
+   "fieldname": "section_break_ktvi",
+   "fieldtype": "Section Break",
+   "label": "Group Leader Details"
+  },
+  {
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "label": "Group Name"
+  },
+  {
+   "fieldname": "group_leader_name",
+   "fieldtype": "Data",
+   "label": "Group Leader Name"
+  },
+  {
+   "fieldname": "column_break_mxfh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "group_leader_email_address",
+   "fieldtype": "Data",
+   "label": "Group Leader Email Address"
+  },
+  {
+   "fieldname": "group_leader_phone_number",
+   "fieldtype": "Int",
+   "label": "Group Leader Phone Number"
+  },
+  {
+   "fieldname": "group_leader_college_name",
+   "fieldtype": "Data",
+   "label": "Group Leader College Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-27 17:03:43.026826",
+ "modified": "2025-10-27 17:26:56.203975",
  "modified_by": "Administrator",
  "module": "Sys Customization",
  "name": "Registrations",
