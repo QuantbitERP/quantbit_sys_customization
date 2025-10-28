@@ -51,12 +51,15 @@
   {
    "fieldname": "group_name",
    "fieldtype": "Data",
-   "label": "Group Name"
+   "in_list_view": 1,
+   "label": "Group Name",
+   "reqd": 1
   },
   {
    "fieldname": "group_leader_name",
    "fieldtype": "Data",
-   "label": "Group Leader Name"
+   "label": "Group Leader Name",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_mxfh",
@@ -65,23 +68,27 @@
   {
    "fieldname": "group_leader_email_address",
    "fieldtype": "Data",
-   "label": "Group Leader Email Address"
+   "label": "Email Address",
+   "reqd": 1
   },
   {
    "fieldname": "group_leader_phone_number",
    "fieldtype": "Int",
-   "label": "Group Leader Phone Number"
+   "label": "Phone Number",
+   "length": 100,
+   "reqd": 1
   },
   {
    "fieldname": "group_leader_college_name",
    "fieldtype": "Data",
-   "label": "Group Leader College Name"
+   "label": "College Name",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-27 17:26:56.203975",
+ "modified": "2025-10-28 11:28:34.250036",
  "modified_by": "Administrator",
  "module": "Sys Customization",
  "name": "Registrations",

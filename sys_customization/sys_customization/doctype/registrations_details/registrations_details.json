@@ -7,10 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "group_member_name",
-  "email_address",
   "column_break_psga",
-  "phone_number",
-  "college_name"
+  "email_address",
+  "column_break_kdze",
+  "phone_number"
  ],
  "fields": [
   {
@@ -39,22 +39,19 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Phone Number",
+   "length": 100,
    "reqd": 1
   },
   {
-   "fieldname": "college_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "College Name",
-   "reqd": 1
+   "fieldname": "column_break_kdze",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-10-27 17:03:56.352622",
+ "modified": "2025-10-28 11:28:49.223517",
  "modified_by": "Administrator",
  "module": "Sys Customization",
  "name": "Registrations Details",
