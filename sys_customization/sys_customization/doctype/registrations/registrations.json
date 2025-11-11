@@ -11,12 +11,16 @@
   "section_break_ktvi",
   "group_name",
   "group_leader_name",
+  "collage",
   "column_break_mxfh",
   "group_leader_email_address",
   "group_leader_phone_number",
   "group_leader_college_name",
   "section_break_fqzv",
-  "table_rono"
+  "table_rono",
+  "registration_mail",
+  "problem_statement",
+  "go"
  ],
  "fields": [
   {
@@ -52,8 +56,10 @@
    "fieldname": "group_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Group Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "group_leader_name",
@@ -68,28 +74,62 @@
   {
    "fieldname": "group_leader_email_address",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Email Address",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "group_leader_phone_number",
    "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Phone Number",
    "length": 100,
    "reqd": 1
   },
   {
+   "depends_on": "eval:doc.collage == \"Other\";",
    "fieldname": "group_leader_college_name",
    "fieldtype": "Data",
    "label": "College Name",
-   "reqd": 1
+   "mandatory_depends_on": "eval:doc.collage == \"Other\";"
+  },
+  {
+   "default": "0",
+   "fieldname": "registration_mail",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Registration Mail"
+  },
+  {
+   "fieldname": "collage",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Collage",
+   "options": "Collage"
+  },
+  {
+   "default": "0",
+   "fieldname": "problem_statement",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Problem Statement"
+  },
+  {
+   "default": "0",
+   "fieldname": "go",
+   "fieldtype": "Check",
+   "label": "go"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-28 11:28:34.250036",
- "modified_by": "Administrator",
+ "modified": "2025-11-07 15:26:39.744431",
+ "modified_by": "vikas.deshmukh@erpdata.in",
  "module": "Sys Customization",
  "name": "Registrations",
  "naming_rule": "By \"Naming Series\" field",
@@ -104,6 +144,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
    "share": 1,
    "write": 1
   }

@@ -5,6 +5,10 @@ app_description = "Sys Customizations"
 app_email = "quntbit.support@erpdata.in"
 app_license = "mit"
 
+website_redirects = [
+    {"source": "/jobs/quantbit_technologies_private_limited/hackathon-for-developer-intern-recruitment-", 
+     "target": "https://sys1.erpdata.in/quant-quest"}
+]
 # Apps
 # ------------------
 
